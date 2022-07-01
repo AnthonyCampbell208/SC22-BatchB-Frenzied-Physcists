@@ -21,4 +21,4 @@
 {"cell_type":"markdown","id":"c4be73","input":"## Step 3: See if the user succeeds in first try\nIn this part, we need to check `if` the user's guess is correct and equal to the random four-digit integer the computer generated.\n\nIf the user's guess is correct, you should output something like: \n\n\n> \"Great! You only needed 1 try! You're a Mastermind!\"\n\nElse, then the computer hints by revealing which digits or numbers the user got correct.","metadata":{"id":"gxclhNPSFYdB"},"pos":14,"type":"cell"}
 {"cell_type":"markdown","id":"d546bf","input":"## Step 2: Get the user's guess\nThe user is now going to try to guess the 4-digit number. You should get `input()` from the user and set their guess to an integer. \n\nIf you run into issues, try to google how to get integer input from a user in python!","metadata":{"id":"yl0IqDTEEzHB"},"pos":12,"type":"cell"}
 {"id":0,"time":1656423857122,"type":"user"}
-{"last_load":1656448572115,"type":"file"}
+{"last_load":1656597546058,"type":"file"}

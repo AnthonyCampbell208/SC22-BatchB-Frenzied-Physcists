@@ -132,4 +132,4 @@
 {"cell_type":"markdown","id":"fe1a15","input":"### Variables","pos":2,"type":"cell"}
 {"cell_type":"markdown","id":"fe6985","input":"Our dataframe is pretty small so it's easy to show the whole thing in the output, but for larger dataframes it is important to only show a few of the rows so we don't have to scroll all over. To do this, we can use the df.head\\(x\\) function to show the first x rows of the dataframe or tail\\(x\\) to show the last x number of rows\n","pos":119,"type":"cell"}
 {"id":0,"time":1656343754760,"type":"user"}
-{"last_load":1656448572114,"type":"file"}
+{"last_load":1656597546059,"type":"file"}

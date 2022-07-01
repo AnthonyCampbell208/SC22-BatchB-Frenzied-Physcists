@@ -104,5 +104,5 @@
 {"cell_type":"markdown","id":"f5732a","input":"**TODO:** Make an array from my\\_array of all \\-3's:\n\n","pos":85,"type":"cell"}
 {"cell_type":"markdown","id":"fd0433","input":"To access a specific item from the list, you would do the following.","pos":26,"type":"cell"}
 {"cell_type":"markdown","id":"ffc65b","input":"You can also get various details about the dataframe with the following functions.\n","pos":97,"type":"cell"}
-{"id":0,"time":1656354378326,"type":"user"}
-{"last_load":1656437366805,"type":"file"}
+{"id":0,"time":1656600765556,"type":"user"}
+{"last_load":1656600765182,"type":"file"}
