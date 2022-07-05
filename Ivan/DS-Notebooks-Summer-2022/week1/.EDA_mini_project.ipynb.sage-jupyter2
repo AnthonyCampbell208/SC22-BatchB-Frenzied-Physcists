@@ -52,5 +52,5 @@
 {"cell_type":"markdown","id":"f84e74","input":"### Creating Beautiful Visualizations with Plotly\n\nSo far, it looks like a scatter plot might be our best bet! Now we want to make a beautiful scatter plot using `plotly.`Just like pandas and numpy, plotly is a module that lets us create beautiful visualizations in just a few lines of code. \n\nI'm only going to help with the import, so I need you to spend time on plotly's documentation in order to build the same scatter plot you did in the last section, but nicer. Maybe google \"Scatter plots in plotly python\" to start!\n\n","pos":40,"type":"cell"}
 {"cell_type":"raw","id":"60d859","input":"What do these columns mean?\n\nStudy Name -> name of the study where penguin sample was taken\nSample -> number of penguin sample\nSpecies -> name of the penguin species\nRegion -> area of the Palmer Archipelago\nIsland -> island in the area of the Palmer Archipelago\nStage -> stage in penguin's life cycle\nClutch completion -> did egg hatch?\nCulmen -> length of beak center line\nDelta 15 N -> ratio of nitrogen isotopes\nDelta 13 C -> ratio of carbo isotopes","pos":11,"type":"cell"}
 {"cell_type":"raw","id":"9248ae","input":"Write up some descriptions for your findings here....\n\n\n\n\n","pos":51,"type":"cell"}
-{"id":0,"time":1656609513473,"type":"user"}
-{"last_load":1656609513722,"type":"file"}
+{"id":0,"time":1656688897721,"type":"user"}
+{"last_load":1656688899689,"type":"file"}
