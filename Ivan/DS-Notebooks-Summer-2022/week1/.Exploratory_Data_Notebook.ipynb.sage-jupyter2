@@ -71,5 +71,5 @@
 {"cell_type":"markdown","id":"f11927","input":"### Import Packages and Define Functions <a class=\"anchor\" id=\"Import\"></a>\n##### You should have a section that imports necessary packages and defines any functions at the top of every notebook, anyone know why?","pos":2,"type":"cell"}
 {"cell_type":"markdown","id":"f4fc55","input":"What does the './' ahead of our folder name do?\n<details> Pathing is more complex than you might think. The program does not know where to look for your file. \n    <br> Adding ./ tells the program to start looking from the location where this Notebook is located </details>","pos":9,"type":"cell"}
 {"cell_type":"markdown","id":"f7f593","input":"Many are issues with hyphens, some are not, let's fix the hyphen problem and look at the rest.","pos":43,"type":"cell"}
-{"id":0,"time":1656691084565,"type":"user"}
-{"last_load":1656691086189,"type":"file"}
+{"id":0,"time":1657032221897,"type":"user"}
+{"last_load":1657032221666,"type":"file"}

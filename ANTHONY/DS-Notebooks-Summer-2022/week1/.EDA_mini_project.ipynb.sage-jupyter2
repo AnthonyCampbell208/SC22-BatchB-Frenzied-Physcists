@@ -60,5 +60,5 @@
 {"cell_type":"markdown","id":"f3d688","input":"Conditions in pandas work just like `if` statements in python. \n\n**TODO: Can you tell me which species of penguin can have a flipper length greater than or equal to 230 by using conditions in pandas?**\n\n","pos":35,"type":"cell"}
 {"cell_type":"raw","id":"57e0d4","input":"Write up some descriptions for your findings here....\n\n\n\n\n","pos":59,"type":"cell"}
 {"cell_type":"raw","id":"81361f","input":"What do these columns mean?\n\n\n\n\n\n\n","pos":18,"type":"cell"}
-{"id":0,"time":1656684865471,"type":"user"}
-{"last_load":1656684865399,"type":"file"}
+{"id":0,"time":1657029612219,"type":"user"}
+{"last_load":1657029612063,"type":"file"}

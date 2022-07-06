@@ -55,5 +55,5 @@
 {"cell_type":"markdown","id":"e208c6","input":"**TODO:** Now, let's have some fun. Can you create plots using the following functions?\n\n1. Scatter Plot: [https://pandas.pydata.org/pandas\\-docs/version/0.25.0/reference/api/pandas.DataFrame.plot.scatter.html](https://pandas.pydata.org/pandas-docs/version/0.25.0/reference/api/pandas.DataFrame.plot.scatter.html)\n2. Pie Plot: [https://pandas.pydata.org/docs/user\\_guide/visualization.html\\#visualization\\-pie](https://pandas.pydata.org/docs/user_guide/visualization.html#visualization-pie)\n\nPro challenge: Add a title to each!\n\n","pos":40,"type":"cell"}
 {"cell_type":"raw","id":"58726c","input":"Write up some descriptions for your findings here....\nThe bigger the body mass of a penguin the bigger its flipper will be.\nThe longer the Culmen is the bigger the body mass, but it varies between species of penguins.","pos":54,"type":"cell"}
 {"cell_type":"raw","id":"d730db","input":"What do these columns mean?\nhttps://allisonhorst.github.io/palmerpenguins/reference/penguins_raw.html\n\n\n\n\n\n\n","pos":11,"type":"cell"}
-{"id":0,"time":1656690550160,"type":"user"}
-{"last_load":1656684085144,"type":"file"}
+{"id":0,"time":1657117194656,"type":"user"}
+{"last_load":1657117194426,"type":"file"}
