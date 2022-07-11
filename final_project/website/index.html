@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Scrolling Nav - Start Bootstrap Template</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder"><u>Predicting Airline Satisfaction</u></h1>
+              <p class="lead">We tried to find out whether someone did or did not enjoy their flight with machine learning!</p>
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                      
+                        <h2>What is our website about?</h2>
+                        <p class="lead">Our team created a website to show how we can predict a passenger's satisfaction on an airplane with visualizations and models. </p>
+                        <h2>What did we use?</h2>
+                      <p>For our project we used:</p>
+                        <ul>
+                          <li>Kaggle for our dataset.: <a href="https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction">Our Dataset</a></li>
+                          <li>Pandas to make our dataset usable to code.</li>
+                          <li>Plotly to make visualizations.</li>
+                          <li>SKLearn for our machine learning.</li>
+                          <li>HTML in order to make our website.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services section-->
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Charts</h2>
+                      <iframe width="900" height="900"title="Satisfaction" src="plots/satisfaction_hist.html"></iframe>
+                      <iframe width="900" height="900"title="Class Satisfaction" src="plots/class_satisfaction_hist.html"></iframe>
+                      <iframe width="900" height="900" title="Leg Room Pie Chart" 
+	src="plots/lrs_pie.html"></iframe>
+                      <iframe width="900" height="900" title="Departure/Arrival Convenience Pie Chart" 
+	src="plots/departure_arrival_pie.html"></iframe>
+                      <iframe width="900" height="900" title="Inflight Wifi Service Pie Chart" 
+	src="plots/ifs_pie.html"></iframe>
+                      <iframe width="900" height="900" title="On-board Service Pie Chart" 
+	src="plots/obs_pie.html"></iframe>
+                      <iframe width="450" height="450" title="Short Distance Flight Classes" 
+	src="plots/short_distance_class_pie.html"></iframe>
+                      <iframe width="450" height="450" title="Medium Distance Flight Classes" 
+	src="plots/medium_distance_class_pie.html"></iframe>
+                      <iframe width="450" height="450" title="Long Distance Flight Classes" 
+	src="plots/long_distance_class_pie.html"></iframe>
+                      
+                       <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="plots/service_pie.html"></iframe>     
+                                             <iframe width="900" height="900" title="Correlation Table of Features" 
+	src="plots/pie_3.html"></iframe>     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Machine Learning</h2>
+                        <p class="lead">In order to achieve our goal, we used a wide variety of machine learning models. They all worked differently and used various methods to answer our question. This gave them various answers, and some were more accurate than others. This helped us determine which model would most accurately determine which factors matter the most, and which model is the most consistent. Some of the models we used include: Random Forest, Support Vector Classifier, Stochastic Gradient Descent, and more. </p>
+                        <h3>Random Forest Model</h3>
+                        <p class="descript-text">A random forest is a model that makes a given number of randomized decision trees and uses them to make predictions on the data by using averaging functions to combine its results from several decision trees, making a more accurate/realistic prediction. 
+                          Randomizing decision trees allows the model to individually look for correlations between sections of the dataset, making predictions more intuitive, compared to looking at the entire dataset through one decision tree, where it is harder to find patterns where there 
+                          are so many variables to consider. It then takes the accuracy of the models it makes and displays them on the heatmap so that we can see how accurate or precise the model is.
+                          <br> <br> Through some light hyperparameter tuning, we found that at around 20 decision trees, there was no more improvement in the performance of the model and subsequent additions to the amount of decision trees would just increase the processing time. 
+                          There were also no differences in accuracy/precision when we tried different criterion such as "entropy" and "log_loss", so we decided that "gini", the default criterion, was good enough for the model.
+                          Using GridSearchCV, we saw a slight increase in performance for higher amounts of decision trees like 30, and it looked like "entropy" had slightly better results than "gini", so we switched to those hyperparameters.
+                        </p>
+                        <h3>Categorical Naive Bayes Model</h3>
+                        <p class="descript-text">The categorical Naive Bayes model works using the Bayes Theorem, which assumes that individual features are dependent on each other, which works well with our dataset, as we can see through our correlation matrix that none of our features are very correlated. 
+                          Applying the Bayes Theorem assigns a probability to each feature in the dataset, then uses those probabilities to predict a whole outcome. The categorical Native Bayes model works best for categorical data, which works well with our dataset, as we have a lot of categorical data in the form of 1-5 ratings for the airline's performance.  
+                          An alpha value of 3 seemed to slightly improve the model, but further increases to alpha didn't make a significant difference.
+                        </p>
+                      <h3>Decision Tree Model</h3>
+                      <p class="descript-text">
+                        A Decision Tree Classifier uses the given data and information to help make a decision tree. It is a group of questions that depending on how you answer one question it takes you down a certain path. The model checks various variables and checks whether they match the requirements of the question. 
+                        If it does you go down the left path, if it doesn't you go down the right path. After you reach the bottom it will put you into one of our 2 groups. This makes it relatively simple and easy to understand. Not only that but it has a lot of parameters, which while it makes it difficult to do hyper parameter tuning, allows it to be quite accurate in most situations if you tune it well.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

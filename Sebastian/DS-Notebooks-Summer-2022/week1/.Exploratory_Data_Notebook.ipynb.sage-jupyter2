@@ -69,5 +69,5 @@
 {"cell_type":"markdown","id":"f3a437","input":"<details> If packages are not imported before they are used, you will receive errors. \n    <br> It is easiest to 'run all' cells which will go from top to bottom when coming back to your notebook after a break. </details>","pos":3,"type":"cell"}
 {"cell_type":"markdown","id":"f759c1","input":"## Analyzing Our Data <a class=\"anchor\" id=\"Analyze\"></a>\nHere we want to start looking at our data in the context of our original goal. <br> \"Are There Associations With University Tuition & Professional Pay on a State-by-State Basis?\"<br> To do this I'm going to manually create a dataset, getting first the number of schools in that state, and then the average of statistics I am investigating.","pos":48,"type":"cell"}
 {"cell_type":"markdown","id":"fabf7f","input":"We can see that there are a few state_codes that don't have state names, we can manually add those.\n<br>We'll make a function for this and add it to the top.","pos":26,"type":"cell"}
-{"id":0,"time":1656609492839,"type":"user"}
-{"last_load":1656609492721,"type":"file"}
+{"id":0,"time":1657559060686,"type":"user"}
+{"last_load":1657559058660,"type":"file"}
