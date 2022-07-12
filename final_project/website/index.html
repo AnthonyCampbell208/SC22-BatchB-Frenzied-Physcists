@@ -5,20 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Scrolling Nav - A.I. Camp</title>
+        <title>Scrolling Nav - <a href="https://www.ai-camp.org">A.I. Camp</a></title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container px-4">
                 <a class="navbar-brand" href="#page-top">A.I. Camp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#use">Use</a></li>
                         <li class="nav-item"><a class="nav-link" href="#charts">Charts</a></li>
                         <li class="nav-item"><a class="nav-link" href="#machine-learning">Machine Learning</a></li>
                         <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
@@ -28,61 +29,114 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder"><u>Predicting Airline Satisfaction</u></h1>
+        <header class="masthead" style="background-image: url('https://image.cnbcfm.com/api/v1/image/104780481-IMG_6947-1.jpg?v=1508335390'); color: white;">
+          <div class="container">
+          <div class="container px-4 text-center">
+            <h1 class="fw-bolder"><u>Predicting Airline Satisfaction</u></h1>
               <p class="lead">Finding out whether someone did or did not enjoy their flight with machine learning!</p>
             </div>
+           </div>
         </header>
         <!-- About section-->
-        <section id="about">
+        <section class="bg-light" id="about">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>What is our website about?</h2>
                         <p class="lead">Our team created a website to show how we can predict a passenger's satisfaction on an airplane with visualizations and models. </p>
-                        <h2>What did we use?</h2>
+                      </div>
+                 </div>
+              </div>
+          </section>
+         <!--Use section-->
+         <section id="use">
+           <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                                <h2>What did we use?</h2>
                         <p>For our project we used:</p>
-                        <ul>
+                          <ul>
                           <li>Kaggle for our dataset: <a href="https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction">Our Dataset</a></li>
                           <li>Python as our coding language.</li>
-                          <li>Pandas to make our dataset usable to code</li>
-                          <li>Plotly to make visualizations</li>
-                          <li>SKLearn for our machine learning</li>
-                          <li>HTML in order to make this website</li>
+                          <li>Pandas to make our dataset usable to code.</li>
+                          <li>Plotly to make visualizations.</li>
+                          <li>SKLearn for our machine learning.</li>
+                          <li>HTML in order to make this website!</li>
                         </ul>
-                       </div>
-                    </div>
+                      </div>
                   </div>
+             </div>
               </section>
         <!-- Charts section-->
         <section class="bg-light" id="charts">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>Charts</h2>
-                      <iframe width="900" height="900"title="Satisfaction" src="plots/satisfaction_hist.html"></iframe>
-                      <iframe width="900" height="900"title="Class Satisfaction" src="plots/class_satisfaction_hist.html"></iframe>
-                      <iframe width="900" height="900" title="Leg Room Pie Chart" 
-	src="plots/lrs_pie.html"></iframe>
-                      <iframe width="900" height="900" title="Departure/Arrival Convenience Pie Chart" 
-	src="plots/departure_arrival_pie.html"></iframe>
-                      <iframe width="900" height="900" title="Inflight Wifi Service Pie Chart" 
-	src="plots/ifs_pie.html"></iframe>
-                      <iframe width="900" height="900" title="On-board Service Pie Chart" 
-	src="plots/obs_pie.html"></iframe>
-                      <iframe width="900" height="900" title="Short Distance Flight Classes" 
-	src="plots/short_distance_class_pie.html"></iframe>
-                      <iframe width="900" height="900" title="Medium Distance Flight Classes" 
-	src="plots/medium_distance_class_pie.html"></iframe>
-                      <iframe width="900" height="900" title="Long Distance Flight Classes" 
-	src="plots/long_distance_class_pie.html"></iframe>
-                      
-                       <iframe width="900" height="900" title="Correlation Table of Features" 
-	src="plots/service_pie.html"></iframe>     
-                                             <iframe width="900" height="900" title="Correlation Table of Features" 
-	src="plots/pie_3.html"></iframe>     
-                    </div>
+                      <h2>Charts</h2>
+                      <iframe width="750" height="500" title="On-board Service" src="plots/obs_pie.html"></iframe>
+                      <p>
+                       The percentage of people who are satisfied or unsatisfied based on the on-board service.
+                      </p>
+                       <html>    
+                        <body> 
+                          <a href="pie_chart.html">
+                          <button class="button1">Pie Chart</button>
+                          </a>
+                        </body>    
+                      </html>
+                      <iframe width="750" height="500" title="Class Satisfaction" src="plots/class_satisfaction_hist.html"></iframe>
+                      <p>
+                      The amount of people who are either satisfied or neutral/dissatisfied, in relation to their class. Customers in business class are drastically more likely to be satisfied with their flight, while those in eco are drastically more likely to be dissatisfied/neutral. This is most likely because of the different reasons for travel, and the contrasting quality of flight.
+                      </p>
+                   <iframe width="750" height="500" title="Leg Room Pie Chart" src="plots/lrs_pie.html"></iframe>
+                      <p>
+                      The percentage of people who were satisfied or neutral/dissatisfied in relation to their leg room rating. This can be the result of the quality of flight, which explains why the higher the rating, the more likely the customer was satisfied. 
+                      </p>
+                      <iframe width="750" height="500" title="Departure/Arrival Convenience Pie Chart"src="plots/departure_arrival_pie.html"></iframe>
+                      <p>
+                        The percentage of people who are satisfied or unsatisfied based on the convenience on departure and arrival times. This has many variables, but overall, it seems like there  was only a slight difference between the satisfaction ratings, meaning that it's not as important to passengers.
+                      </p>
+                      <iframe width="750" height="500" title="Inflight Wifi Service Pie Chart" src="plots/ifs_pie.html"></iframe>
+                      <p>
+                      The percentage of people who were satisfied or dissatisfied in relation to their rating on the inflight wi-fi service. Overall, it seems that wifi is very important to customers, as those who were satisfied typically had a higher rating on the wifi, mostly four or five. In fact, less than 1% who rated a 5 for wifi were unsatisfied. 
+                      </p>
+                      <iframe width="750" height="500" title="On-board Service" src="plots/obs_pie.html"></iframe>
+                      <p>
+                       The percentage of people who are satisfied or unsatisfied based on the on-board service.
+                      </p>
+                      <iframe width="750" height="500" title="Ranges of Flight" src="plots/ranges_of_flight.html"></iframe>
+                  <p>
+                    What class a person was in, and whether their flight is short, medium, or long. Short flights mostly carry Eco passengers, and most Eco Plus passengers take short flights. Medium distance flights are about half business passengers. Long distance flights are almost only business passengers, with less then one percent being either Eco or Eco Plus.
+                  </p>
+                      <iframe width="750" height="500" title="Rating of On-Board Service" src="plots/service_pie.html"></iframe>
+                      <iframe width="750" height="500" title="Gender Amounts" src="plots/pie_3.html"></iframe>
+                      <iframe width="800" height="752" title="Correlation Matrix" src="plots/correlation_matrix_resized.html"></iframe> 
+                      <p>
+                        The amount each of our variables correlate. The closer to 0 the less the correlation, closer to 1 the correlation increases positively, closer to -1 the correlation increases negatively. Most of our variables don't really correlate. The only column/row we care about is the satisfaction column/row. Most of them don't really correlate but Online Boarding and Business Class have a .5 correlation.
+                      </p>
+                      <iframe width="750" height="500" title="Satisfaction Amounts" src="plots/satisfaction_hist.html"></iframe>
+                      <p>
+                        The amount of people who were either satisfied, or neutral/dissatisfied. The lean to neutral/dissatisfied is most likely due to the fact it encompasses 2 options.
+                      </p>
+                      <iframe width="750" height="500" title="Class Pie Chart" src="plots/pie_2.html"></iframe>
+                      <iframe width="750" height="500" title="Age Overlay Histogram" src="plots/age_overlay_histogram.html"></iframe>
+                      <iframe width="750" height="500" title="Flight Distance Overlay Histogram" src="plots/distance_hist.html"></iframe>
+                      <iframe width="750" height="500" title="Type/Flight Box Plot" src="plots/flight_distance_tt.html"></iframe> <!-- Doesn't make sense -->
+                      <iframe width="750" height="500" title="Arrival Delay Histogram" src="plots/delay_hist.html"></iframe>
+                      <iframe width="750" height="500" title="Gender/Age Box Plot" src="plots/gender_age.html"></iframe>
+                      <iframe width="750" height="500" title="Delay Convenience Scatter" src="plots/delay+convinience_scat.html"></iframe>
+                      <iframe width="750" height="500" title="Travel Type Pie" src="plots/travel_type_pie.html"></iframe> <!-- Doesn't make sense -->
+                      <iframe width="800" height="752" title="Scatter Matrix" src="plots/scatter_matrix_resized.html"></iframe> 
+                      <p>
+                        Takes various variables and plots each one with each one. From the selected variables the only ones that correlate are Departure Delay and Arrival Delay, but this doesn't give us any new information.
+                      </p>
+                      <iframe width="750" height="500" title="Customer Histogram" src="plots/customer_hist.html"></iframe>
+                      <iframe width="750" height="500" title="Customer Type" src="plots/customer_type.html"></iframe>
+                      <p>
+                        Whether a customer is loyal and disloyal and whether they were satisified, or neutral/dissatisfied.there is a 3 times greater
+                      </p>
+                      <iframe width="750" height="500" title="Class/Age Satisfaction" src="plots/box_graph_age_class.html"></iframe>
+                  </div>
                 </div>
             </div>
         </section>
@@ -91,8 +145,8 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Machine Learning</h2>
-                        <p class="lead">In order to achieve our goal, we used a wide variety of machine learning models. They all worked differently and used various methods to answer our question. This gave them various answers, and some were more accurate than others. This helped us determine which model would most accurately determine which factors matter the most, and which model is the most consistent. Some of the models we used include: Random Forest, Support Vector Classifier, Stochastic Gradient Descent, and more. </p>
-                      <h3><FONT COLOR="##00FF00"> Random Forest Model</FONT></h3>
+                        <p class="lead">In order to achieve our goal, we used a wide variety of machine learning models. They all worked differently and used various methods to answer our question. This gave them various answers, and some were more accurate than others. This helped us determine which model would most accurately determine which factors matter the most, and which model is the most consistent. Some of the models we used include: Random Forest, Support Vector Classifier, Stochastic Gradient Descent, and more, although we only presented a select few. </p>
+                      <h3>Random Forest Model</h3>
                         <p class="descript-text">A random forest model is a model that makes a given number of randomized decision trees and uses averaging functions to combine its results from the decision trees and makes predictions on the data. This allows for a more accurate and realistic prediction. 
                           Randomizing decision trees allows the model to individually look for correlations between sections of the dataset, making predictions more intuitive, compared to looking at the entire dataset through one decision tree, as it is harder to find patterns where there
                           are so many variables to consider. It then takes the accuracy of the models it makes and displays them on the heat-map so that we can see how accurate or precise the model is.
@@ -102,23 +156,31 @@
                         </p>
                         <figure>
                           <img src= "assets/random-forest-diagram.svg" alt="Random Forest Diagram" width = "500px" height = "500px"> 
-                          <figcaption>Image courtesy of Tibco.com</figcaption>
+                          <figcaption>Image courtesy of <a href="https://www.tibco.com/reference-center/what-is-a-random-forest">Tibco</a></figcaption>
                         </figure>
-                        <h3>Categorical Naive Bayes Model</h3>
+                      <br>
+                        <h3>Categorical Naive Bayes Model</h3><span style='color:#4d1919'></span><span style='color:#4d1919'></span><span style='color:#4d1919'></span><span style='color:#4d1919'></span><span style='color:#4d191a'></span><span style='color:#f47373'></span><span style='color:#000000'></span><span style='color:#000000'></span><span style='color:#625c7e'></span><span style='color:#8070ce'></span><span style='color:#816edf'></span><span style='color:#777777'></span><span style='color:#161035'></span>
                         <p class="descript-text">The categorical Naive Bayes model works using the Bayes Theorem, which assumes that individual features are dependent on each other, which works well with our dataset, as we can see through our correlation matrix that none of our features are very correlated. 
                           Applying the Bayes Theorem assigns a probability to each feature in the dataset, then uses those probabilities to predict an outcome. The categorical Native Bayes model works best for categorical data, which works well with our dataset, as we have a lot of categorical data in the form of 1-5 ratings for the airline's performance.  
                           An alpha value of 3 seemed to slightly improve the model, but further increases to alpha didn't make a significant difference.
                         </p>
+                        <figure>
+                      <p>
+                        <img src="assets/bayes_theorem.png" alt="Naive Bayes Diagram"width = "500px" height = "349px">
+                          </p>
+                      </figure>
+                      <figcaption>Image credit to <a href="https://luminousmen.com/post/data-science-bayes-theorem">luminousmen</a></figcaption>
+                      <br>
                       <h3>Decision Tree Model</h3> 
                       <p class="descript-text">
-                        A Decision Tree Classifier uses the given data and information to help make a decision tree. It is a group of questions that depending on how you answer one question it takes you down a certain path. The model checks various variables and checks whether they match the requirements of the question. 
-                        If it does, you go down the left path. If it doesn't, you go down the right path. After you reach the bottom, it will put you into one of 2 groups. This makes it relatively simple and easy to understand, while also giving consistent results. As an addition, it has a lot of parameters, which while it makes it difficult to do hyper parameter tuning, allows it to be quite accurate in most situations if you tune it well.
+                        A Decision Tree Classifier uses the given data and information to help make a decision tree. It is a group of questions that depending on how you answer one question it takes you down a certain path. The model checks various variables and checks whether they match the requirements of the question. If it does, you go down the left path. If it doesn't, you go down the right path. After you reach the bottom, it will put in either the satisfied group, or the neutral or dissatisfied group. This makes it relatively simple and easy to understand, while also giving consistent results. As an addition, it has a lot of parameters which, while it makes it difficult to do hyper parameter tuning, allows it to be quite accurate in most situations if you tune it well. The parameters we changed were max depth at 4, min samples leaf at 5, and min samples split at 2. We used grid search to find out the best parameters.
                       </p>
-                      <img src= "assets/tree.jpg" alt="Decision Tree Diagram" width = "500px" height = "500px">
-                      <figcaption>The tree our model made</figcaption>
+                      <img src= "assets/tree.jpg" alt="Decision Tree Diagram" width = "750px" height = 600>
+                      <figcaption>Image from model output</figcaption>
                     </div>
                 </div>
-            </div>
+              <!--are we going to add any more models?-->
+             </div>
         </section>
         <!-- Conclusion section-->
         <section class = "bg-light" id="conclusion">
@@ -137,7 +199,7 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                       <h2>Frenzied Physicists</h2>
-                      <p class="lead">Meet the team who built these visualizations and models.</p>
+                      <p class="lead">Meet the team who built these visualizations and models!</p>
                       <h4>Andrea</h4>
                       <p class="descript-text">description</p>
                       <h4>Angela</h4>
@@ -149,9 +211,9 @@
                       <h4>Ivan</h4>
                       <p class="descript-text">description</p>
                       <h4>Sebastian</h4>
+                      <p class="descript-text">Built and did the Hyper Parameter Tuning for the Decision Tree</p>
+                        <h4>Anthony</h4>
                       <p class="descript-text">Leader of the team</p>
-                      <h4>Anthony</h4>
-                      <p class="descript-text">description</p>
                     </div>
                 </div>
             </div>
