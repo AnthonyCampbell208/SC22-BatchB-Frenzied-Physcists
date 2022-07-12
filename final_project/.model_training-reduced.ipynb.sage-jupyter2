@@ -42,5 +42,5 @@
 {"end":1657556267059,"exec_count":31,"id":"3c1747","input":"reduced_df.satisfaction_satisfied.value_counts()","kernel":"ds_env","output":{"0":{"data":{"text/plain":"0    7323\n1    5626\nName: satisfaction_satisfied, dtype: int64"},"exec_count":31}},"pos":8.75,"start":1657556267048,"state":"done","type":"cell"}
 {"end":1657556290377,"exec_count":34,"id":"edcd74","input":"input_columns.shape","kernel":"ds_env","output":{"0":{"data":{"text/plain":"(12949, 27)"},"exec_count":34}},"pos":10.75,"start":1657556290367,"state":"done","type":"cell"}
 {"id":"883b52","input":"","pos":2.5,"type":"cell"}
-{"id":0,"time":1657559639087,"type":"user"}
+{"id":0,"time":1657637530965,"type":"user"}
 {"last_load":1657555421005,"type":"file"}

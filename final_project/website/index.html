@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Scrolling Nav - Start Bootstrap Template</title>
+        <title>Scrolling Nav - A.I. Camp</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
@@ -14,13 +14,15 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">A.I. Camp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#charts">Charts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#machine-learning">Machine Learning</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">The Team</a></li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +31,7 @@
         <header class="bg-primary bg-gradient text-white">
             <div class="container px-4 text-center">
                 <h1 class="fw-bolder"><u>Predicting Airline Satisfaction</u></h1>
-              <p class="lead">We tried to find out whether someone did or did not enjoy their flight with machine learning!</p>
+              <p class="lead">Finding out whether someone did or did not enjoy their flight with machine learning!</p>
             </div>
         </header>
         <!-- About section-->
@@ -37,24 +39,24 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                      
                         <h2>What is our website about?</h2>
                         <p class="lead">Our team created a website to show how we can predict a passenger's satisfaction on an airplane with visualizations and models. </p>
                         <h2>What did we use?</h2>
-                      <p>For our project we used:</p>
+                        <p>For our project we used:</p>
                         <ul>
-                          <li>Kaggle for our dataset.: <a href="https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction">Our Dataset</a></li>
-                          <li>Pandas to make our dataset usable to code.</li>
-                          <li>Plotly to make visualizations.</li>
-                          <li>SKLearn for our machine learning.</li>
-                          <li>HTML in order to make our website.</li>
+                          <li>Kaggle for our dataset: <a href="https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction">Our Dataset</a></li>
+                          <li>Python as our coding language.</li>
+                          <li>Pandas to make our dataset usable to code</li>
+                          <li>Plotly to make visualizations</li>
+                          <li>SKLearn for our machine learning</li>
+                          <li>HTML in order to make this website</li>
                         </ul>
+                       </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services section-->
-        <section class="bg-light" id="services">
+                  </div>
+              </section>
+        <!-- Charts section-->
+        <section class="bg-light" id="charts">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
@@ -69,11 +71,11 @@
 	src="plots/ifs_pie.html"></iframe>
                       <iframe width="900" height="900" title="On-board Service Pie Chart" 
 	src="plots/obs_pie.html"></iframe>
-                      <iframe width="450" height="450" title="Short Distance Flight Classes" 
+                      <iframe width="900" height="900" title="Short Distance Flight Classes" 
 	src="plots/short_distance_class_pie.html"></iframe>
-                      <iframe width="450" height="450" title="Medium Distance Flight Classes" 
+                      <iframe width="900" height="900" title="Medium Distance Flight Classes" 
 	src="plots/medium_distance_class_pie.html"></iframe>
-                      <iframe width="450" height="450" title="Long Distance Flight Classes" 
+                      <iframe width="900" height="900" title="Long Distance Flight Classes" 
 	src="plots/long_distance_class_pie.html"></iframe>
                       
                        <iframe width="900" height="900" title="Correlation Table of Features" 
@@ -84,30 +86,72 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section id="machine-learning">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Machine Learning</h2>
                         <p class="lead">In order to achieve our goal, we used a wide variety of machine learning models. They all worked differently and used various methods to answer our question. This gave them various answers, and some were more accurate than others. This helped us determine which model would most accurately determine which factors matter the most, and which model is the most consistent. Some of the models we used include: Random Forest, Support Vector Classifier, Stochastic Gradient Descent, and more. </p>
-                        <h3>Random Forest Model</h3>
-                        <p class="descript-text">A random forest is a model that makes a given number of randomized decision trees and uses them to make predictions on the data by using averaging functions to combine its results from several decision trees, making a more accurate/realistic prediction. 
-                          Randomizing decision trees allows the model to individually look for correlations between sections of the dataset, making predictions more intuitive, compared to looking at the entire dataset through one decision tree, where it is harder to find patterns where there 
-                          are so many variables to consider. It then takes the accuracy of the models it makes and displays them on the heatmap so that we can see how accurate or precise the model is.
-                          <br> <br> Through some light hyperparameter tuning, we found that at around 20 decision trees, there was no more improvement in the performance of the model and subsequent additions to the amount of decision trees would just increase the processing time. 
+                      <h3><FONT COLOR="##00FF00"> Random Forest Model</FONT></h3>
+                        <p class="descript-text">A random forest model is a model that makes a given number of randomized decision trees and uses averaging functions to combine its results from the decision trees and makes predictions on the data. This allows for a more accurate and realistic prediction. 
+                          Randomizing decision trees allows the model to individually look for correlations between sections of the dataset, making predictions more intuitive, compared to looking at the entire dataset through one decision tree, as it is harder to find patterns where there
+                          are so many variables to consider. It then takes the accuracy of the models it makes and displays them on the heat-map so that we can see how accurate or precise the model is.
+                          <br> <br> Through some light hyper parameter tuning, we found that at around twenty decision trees, there was no more improvement in the performance of the model and subsequent additions to the amount of decision trees would just increase the processing time. 
                           There were also no differences in accuracy/precision when we tried different criterion such as "entropy" and "log_loss", so we decided that "gini", the default criterion, was good enough for the model.
-                          Using GridSearchCV, we saw a slight increase in performance for higher amounts of decision trees like 30, and it looked like "entropy" had slightly better results than "gini", so we switched to those hyperparameters.
+                          Using GridSearchCV, we saw a slight increase in performance for higher amounts of decision trees, like 30, and it looked like "entropy" had slightly better results than "gini", so we switched to those hyper parameters.
                         </p>
+                        <figure>
+                          <img src= "assets/random-forest-diagram.svg" alt="Random Forest Diagram" width = "500px" height = "500px"> 
+                          <figcaption>Image courtesy of Tibco.com</figcaption>
+                        </figure>
                         <h3>Categorical Naive Bayes Model</h3>
                         <p class="descript-text">The categorical Naive Bayes model works using the Bayes Theorem, which assumes that individual features are dependent on each other, which works well with our dataset, as we can see through our correlation matrix that none of our features are very correlated. 
-                          Applying the Bayes Theorem assigns a probability to each feature in the dataset, then uses those probabilities to predict a whole outcome. The categorical Native Bayes model works best for categorical data, which works well with our dataset, as we have a lot of categorical data in the form of 1-5 ratings for the airline's performance.  
+                          Applying the Bayes Theorem assigns a probability to each feature in the dataset, then uses those probabilities to predict an outcome. The categorical Native Bayes model works best for categorical data, which works well with our dataset, as we have a lot of categorical data in the form of 1-5 ratings for the airline's performance.  
                           An alpha value of 3 seemed to slightly improve the model, but further increases to alpha didn't make a significant difference.
                         </p>
-                      <h3>Decision Tree Model</h3>
+                      <h3>Decision Tree Model</h3> 
                       <p class="descript-text">
                         A Decision Tree Classifier uses the given data and information to help make a decision tree. It is a group of questions that depending on how you answer one question it takes you down a certain path. The model checks various variables and checks whether they match the requirements of the question. 
-                        If it does you go down the left path, if it doesn't you go down the right path. After you reach the bottom it will put you into one of our 2 groups. This makes it relatively simple and easy to understand. Not only that but it has a lot of parameters, which while it makes it difficult to do hyper parameter tuning, allows it to be quite accurate in most situations if you tune it well.
+                        If it does, you go down the left path. If it doesn't, you go down the right path. After you reach the bottom, it will put you into one of 2 groups. This makes it relatively simple and easy to understand, while also giving consistent results. As an addition, it has a lot of parameters, which while it makes it difficult to do hyper parameter tuning, allows it to be quite accurate in most situations if you tune it well.
                       </p>
+                      <img src= "assets/tree.jpg" alt="Decision Tree Diagram" width = "500px" height = "500px">
+                      <figcaption>The tree our model made</figcaption>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Conclusion section-->
+        <section class = "bg-light" id="conclusion">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Conclusions</h2>
+                        <h2>So What?</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team section-->
+        <section id="team">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                      <h2>Frenzied Physicists</h2>
+                      <p class="lead">Meet the team who built these visualizations and models.</p>
+                      <h4>Andrea</h4>
+                      <p class="descript-text">description</p>
+                      <h4>Angela</h4>
+                      <p class="descript-text">description</p>
+                      <h4>Ishani</h4>
+                      <p class="descript-text">description</p>
+                      <h4>Isaac</h4>
+                      <p class="descript-text">description</p>
+                      <h4>Ivan</h4>
+                      <p class="descript-text">description</p>
+                      <h4>Sebastian</h4>
+                      <p class="descript-text">Leader of the team</p>
+                      <h4>Anthony</h4>
+                      <p class="descript-text">description</p>
                     </div>
                 </div>
             </div>
