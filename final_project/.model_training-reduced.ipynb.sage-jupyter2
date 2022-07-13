@@ -42,5 +42,5 @@
 {"cell_type":"markdown","id":"8278ed","input":"**Categorical Naive Bayes**\n\nThe categorical Naive Bayes model works using the Bayes Theorem, which assumes that individual features are independent on each other, which works well with our dataset, as we can see through our correlation matrix that none of our features are very correlated. Applying the Bayes Theorem assigns a probability to each feature in the dataset, then uses those probabilities to predict a whole outcome. The categorical Native Bayes model works best for categorical data, which works well with our dataset, as we have a lot of categorical data in the form of 1\\-5 ratings for the airline's performance.\n\n","pos":16,"type":"cell"}
 {"cell_type":"markdown","id":"b0488c","input":"<u>Models to make:</u>\n\n- knn\n- decision tree\n- Random forest\n- SVC \\(DON'T DO THIS ONE YET\\)\n- Logistic regression \n- Adaboost \n- \n\nScoring me\ntrics:\n\n- f1 score\n- Recall\n- Precision \n- Accuracy\n\n","pos":42,"type":"cell"}
 {"cell_type":"markdown","id":"dcbbf0","input":"**Decision Tree:**\n\nA decision tree is a graph that classifies items and whether it is true or false to the question in the box. In this example, we use satisfied for true and false for dissatisfied.\n\n","pos":22,"type":"cell"}
-{"id":0,"time":1657652448890,"type":"user"}
-{"last_load":1657647503888,"type":"file"}
+{"id":0,"time":1657720008112,"type":"user"}
+{"last_load":1657720004391,"type":"file"}
