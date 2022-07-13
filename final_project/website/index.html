@@ -75,7 +75,7 @@
                       <h2>Charts:</h2>
                       <iframe width="750" height="500" title="On-board Service" src="plots/obs_pie.html"></iframe>
                       <p class="descript-text">
-                       This chart is showing the percentage of ratings that people chose for people who were satisfied or not. In the satisfied chart very little people chose 1, 2, or 3, while in the dissatisfied chart the ratings are more even, and less people chose 5. With this information we can conclude that people tend to see on-board service as important and will most likely be satisfied if it were a 4 or 5. That is why more people tended to be more satisfied with their flight when they rated it a 4 or 5.
+                       This chart is showing the percentage of ratings that people chose and whether they were satisfied or not. In the satisfied chart very little people chose 1, 2, or 3, while in the dissatisfied chart the ratings are more even, and less people chose 5. With this information we can conclude that people tend to see on-board service as important and will most likely be satisfied if it were a 4 or 5. That is why more people tended to be more satisfied with their flight when they rated it a 4 or 5.
                       </p>
                       <br>
                        <html>    
@@ -90,7 +90,7 @@
                         <body>
                           <iframe width="750" height="500" title="Class Satisfaction" src="plots/class_satisfaction_hist.html"></iframe>
                       <p class="descript-text">
-                      The amount of people who are either satisfied or neutral/dissatisfied, in relation to their class. Customers in business class are drastically more likely to be satisfied with their flight, while those in eco are drastically more likely to be dissatisfied/neutral. This is most likely because of the different reasons for travel, and the contrasting quality of flight.</p>
+                      This histogram is showing the amount of people who were satisfied or dissatisfied with their flight in a specific class. There were more people who were satisfied with their flight in the Business Class than people who were dissatisfied in that class and in the other classes. The Eco and Eco Plus Class however had a complete opposite effect. More people were dissatisfied with both classes than people who were satisfied in those classes and in the Business Class. This would make sense since the Business Class has the greatest number of perks.</p>
                        <br>
                         <a href="histogram.html#top">
                           <button class="button1">Click For More Histograms</button>
@@ -204,15 +204,15 @@
                       </figure>
                       <br>
                       <h2>Results:</h2>
-                      <p>Below is a graph that lists the metrics for each model we tried. Model names with "grid" are models that we used GridSearchCV with and saw major changes.</p>
+                      <p class="descript-text">Below is a graph that lists the metrics for each model we tried. Model names with "grid" are models that we used GridSearchCV with and saw major changes.</p>
                       <iframe width="800" height="325" title="Results Chart" src="plots/scores.html"></iframe>
-                      <p>
-                      - The Random Forest model did the best in all of the fields with a score of 95% for accuracy an 94% for recall, precision, and f1 score. <br> <br>
-                      - The K-Nearest Neighbors model performed the worst in accuracy, recall, and f1 score, averaging scores in the low 60%’s. The SGD model without hyperparameter tuning performed the worst in precision. <br> <br>
-                      - The Random Forest model did a good job of predicting because it’s scores are very high (90%+ for all metrics). Therefore we think our model would work well for classifying if a passenger was satisfied or not satisfied. We noticed as well that the models that are performing well are all tree based. Categorical Naive Bayes, SGD, and Logistic Regression are all mid tier models and performed very well in the 80 range for all scores but they did not outperform the best model in any fields. <br> <br>
-                      - The grid search improved the SGD model but it did not help the Decision Tree model. SGD had a higher recall score which means that it had less false negatives (predicted 0 and was actually 1) then the grid search model. This means that the grid search model is being too aggressive and saying too many things are negative. <br> <br>
-                      - The grid search for the Decision Tree model hurt the model and there are a couple explanations we have for that. One answer is that when training these models, there’s variance so that means that the decision trees can be more optimized or less optimized which means we might have a bad decision tree. Our grid search probably wasn’t expansive enough and so we’d want to try to look at more values for our parameters. <br> <br>
-                      </p>
+                      <ul class="descript-text">
+                        <li>The Random Forest model did the best in all of the fields with a score of 95% for accuracy an 94% for recall, precision, and f1 score.</li>
+                        <li>The K-Nearest Neighbors model performed the worst in accuracy, recall, and f1 score, averaging scores in the low 60%’s. The SGD model without hyperparameter tuning performed the worst in precision.</li>
+                        <li>The Random Forest model did a good job of predicting because it’s scores are very high (90%+ for all metrics). Therefore we think our model would work well for classifying if a passenger was satisfied or not satisfied. We noticed as well that the models that are performing well are all tree based. Categorical Naive Bayes, SGD, and Logistic Regression are all mid tier models and performed very well in the 80 range for all scores but they did not outperform the best model in any fields.</li>
+                        <li>The grid search improved the SGD model but it did not help the Decision Tree model. SGD had a higher recall score which means that it had less false negatives (predicted 0 and was actually 1) then the grid search model. This means that the grid search model is being too aggressive and saying too many things are negative.</li>
+                        <li>The grid search for the Decision Tree model hurt the model and there are a couple explanations we have for that. One answer is that when training these models, there’s variance so that means that the decision trees can be more optimized or less optimized which means we might have a bad decision tree. Our grid search probably wasn’t expansive enough and so we’d want to try to look at more values for our parameters.</li>
+                    </ul>
                     </div>
                 </div>
              </div>
@@ -224,6 +224,14 @@
                     <div class="col-lg-8">
                         <h2>Conclusion:</h2>
                         <p class="descript-text">
+For our project, we wanted to create a machine learning model that could predict whether someone enjoyed their flight or not and determine which aspects of a flight experience are most important to customers. <br> <br>
+
+As a first step, we created visualizations of our data in order to better understand the data ourselves and help other people understand it as well. Using plotly, we made many different types of visualizations, such as matrices, histograms, bar graphs, scatter plots, and pie charts. Our team also used seaborn to create other graphs like correlation matrices. We then analyzed the information, wrote about what we could conclude from it, and discussed what we thought was happening (correlations, patterns, etc.). <br> <br>
+
+To make predictions based on the data, we used many different machine learning models. To make these models effective, we needed to learn how to do hyperparameter tuning. In fact, almost everything we accomplished throughout the project was something we had to learn from scratch. Most of us came in with little to no coding knowledge, and this caused many issues but we managed to solve all of them in the end. We used GridSearchCV to find out the best parameters for our models. After we made and tuned all of them, we compared them to figure out some issues, explore what we could work to improve, and finally decide on the best model, which was the random forest. <br> <br>
+
+In the end, we succeeded after a lot of hard work and effort. We had made a model with .95 accuracy and concluded that class and online boarding play major roles in one's satisfaction. We used survey data to help determine important factors in airline satisfaction, but there are several things wrong with survey data. Most of the responses were subjective, meaning that there could be bias, and there are many small variables the airline may have no control over that could affect a rating. If we wanted to make a more objective model, we would ask if people were satisfied or not, and then look for concrete statistics such as leg room in centimeters, or find the airline that they flew in: various things that we can measure and that are constant throughout all flights. We could then judge what factors are most important more easily. 
+             
 
                       </p>
                     </div>
@@ -240,7 +248,7 @@
                        <h4>Anthony</h4>
                       <p class="descript-text">Hi my name is Anthony Campbell, I’m 22, and I’m currently in Amherst, Massachusetts. I’ve graduated with a double major in Computer Science and Statistics and I currently am earning my master’s in Computer Science with a concentration with Data Science. I’ve had the wonderful experience to lead this amazing team to build an incredible product. They’ve accomplished so much in 3 weeks: learning python from scratch, preprocessing data, implementing machine learning models, and learning how to build a website. I’m glad I can share my passion for AI and Data Science as well as my knowledge! Great job you guys and I wish you all the best! </p>
                       <h4>Andrea</h4>
-                      <p class="descript-text">Hi! My name is Andrea Mireles, and I’m a junior at MSMS. This is my first time coding and creating a website. I was the co-designer of this website, made a few graphs like the box and whisker plot for gender and age satisfaction. I’ve learned so much at A.I. Camp, and I'am very happy that I spent the summer learning more about programming and A.I.!</p>
+                      <p class="descript-text">Hi! My name is Andrea Mireles, and I’m a junior at MSMS. This is my first time coding and creating a website. I was the co-designer of this website, made a few graphs like the box and whisker plot for gender and age satisfaction, and I helped write out the descriptions of our visualizations. I’ve learned so much at A.I. Camp, and I'am very happy that I spent the summer learning more about programming and A.I.!</p>
                       <h4>Angela</h4>
                       <p class="descript-text">I'm Angela, I'm a junior in high school in Cypress, Texas and this is my first time coding. I learned a lot from this experience in a very short time span, and met a lot of interesting people. I built parts of the histograms and box plots, and also wrote the descriptions for some of the visualizations with help from the rest of the team. </p>
                       <h4>Ishani</h4>
@@ -248,9 +256,9 @@
                       <h4>Isaac</h4>
                       <p class="descript-text">My name is Isaac Mallory, I am 17 and from Cincinnati, Ohio. I have always had an interest in programming but didn't actually start until a year ago and this program has helped me increase my skills a lot. I developed some of the visualizations , wrote descriptions for them, and made the pie chart part of the website.</p>
                       <h4>Ivan</h4>
-                      <p class="descript-text">Hello, my name is Ivan, I'm 15 and from Maryland. These past three weeks at AI Camp have been really enjoyable, and I'm glad I got to learn more about AI and data science! I made some of the graphs and machine learning models that we used, as well as all the explanations for those models on this website.</p>
+                      <p class="descript-text">Hello, my name is Ivan, I'm 15 and from Maryland. These past three weeks at AI Camp have been really enjoyable, and I'm glad I got to learn more about AI and data science! I made some of the graphs and machine learning models that we used, such as the SGD and Random Forest model, as well as all the explanations for those models on this website.</p>
                       <h4>Sebastian</h4>
-                      <p class="descript-text">I'm Sebastian. I have always been interested in computers. I decided to take AI Camp so I can start going into a more specific field and start training in it. While I was here a learn a lot and improved my coding skills and knowledge. I made a few of the visualizations and I build and tuned the Decision Tree
+                      <p class="descript-text">I'm Sebastian. I have always been interested in computers. I decided to take AI Camp so I can start going into a more specific field and start training in it. While I was here a learn a lot and improved my coding skills and knowledge. I made a few of the visualizations and I build and tuned the Decision Tree.
                       </p>
                     </div>
                 </div>
