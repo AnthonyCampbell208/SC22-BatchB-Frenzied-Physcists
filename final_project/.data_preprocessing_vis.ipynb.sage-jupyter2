@@ -89,5 +89,5 @@
 {"cell_type":"markdown","id":"f77d9e","input":"Visualizations to do:\n\n- ~~Histograms to show the distribution of data~~\n  - ~~Using continuous values~~\n- ~~Scatterplots to show the relationship between continous variables~~\n  - We can go into why we're doing this later \n- Box and whisker plots\n- Bar graphs to show relationship between different variables. \n- Pie charts or Donut Charts\n- Correlation Matrix :O\n  - We didn't talk about it yet but I can definitely talk about it soon\n  - \n\n","pos":88,"type":"cell"}
 {"cell_type":"markdown","id":"fca0b8","input":"**Arrival Delay in Minutes Satisfaction:**\n\nThis graph shows the arrival delay, and the amount of people who were satisfied or didn't enjoy their flight. This shows that if the delay was shorter, then there's a a higher chance you will be dissatisfied with it than if the delay was longer.\n\n","pos":47,"type":"cell"}
 {"cell_type":"markdown","id":"feb946","input":"**Age/Flight Distance Satisfaction:**\n\nUnfortunately, this graph is too crowded to gain anything from this. The red dots cover the blue ones so we can't gain any info from them.\n\n","pos":35,"type":"cell"}
-{"id":0,"time":1657736646878,"type":"user"}
-{"last_load":1657734694021,"type":"file"}
+{"id":0,"time":1657821625000,"type":"user"}
+{"last_load":1657809644775,"type":"file"}

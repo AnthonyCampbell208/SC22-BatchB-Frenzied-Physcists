@@ -19,3 +19,10 @@ def get_base_url(port:int) -> str:
         print(f'Server is probably running in production, so a base url does not apply: \n{e}')
         base_url = '/'
     return base_url
+
+
+#I'm not quite sure if this is where we are going to take requests and if I'm wrong feel free to move this code
+import requests
+url = 'http://localhost:5000/api'
+r = requests.post(url,json={'stf':1,})
+print(r.json())
